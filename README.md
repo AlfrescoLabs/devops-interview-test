@@ -44,3 +44,7 @@ helm install acs alfresco-content-services -n devops-test
 Although the Helm install command appears to work the deployment will actually fail with a couple of different errors, your challenge is to identify and fix the errors.
 
 Once the system is running successfully the Alfresco repository will be available at `http://NodeIp:NodePort/alfresco`. If you are using a cluster that does not expose the worker nodes to the outside world the service won't be accessible. By adding to this README please also describe what other techniques you could use to access the Alfresco repository.
+
+## Accessing http://NodeIp:NodePort/alfresco
+
+Because in my environment I used minikube for the helm exercise, in order to access http://NodeIp:NodePort/alfresco, I used minikube tunnel.
