@@ -106,7 +106,7 @@
     dest: /etc/systemd/system/activemq.service
     owner: "{{ username }}"
     group: "{{ group_name }}"
-    mode: 'u=rwx,g=rwx,o=rx'
+    mode: 'u=rw,g=rw,o=r'
   notify: activemq-restart
 
 - name: Ensure activemq service is started and enabled on boot
